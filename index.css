@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(76, 74, 71, 0.399);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 800px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.299), 5px 5px 5px rgba(255, 255, 255, 0.368);
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    border: solid 1px ;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(200, 223, 236);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.keyboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.keyboard button{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(13, 92, 123, 0.763);
+    border: transparent;
+    color: white;
+    font-size: 14pt;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.keyboard div{
+    display: flex;
+    gap: 20px;
+}
+#jogarbtn{
+    background-color: rgb(17, 107, 17);
+}
+#recomecarbtn{
+    background-color: rgba(16, 144, 242, 0.853);
+}
+
+.resultado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    flex-direction: column;
+    min-height: 20px;
+}
+button{
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+button:active{
+    transform: translateY(5px);
+}
+.spinner{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50%;
+    border: solid 5px orange;
+    border-bottom: transparent solid 10px;
+    transition: all .5s  ease;
+    animation: girar .5s infinite ;
+    display: none;
+
+}
+.resposta{
+    background-color: green;
+    height: 20px;
+    width: 20px;
+}
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+    
+}
